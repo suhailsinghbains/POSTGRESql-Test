@@ -14,7 +14,7 @@ const client = new Client({
 
 app.get('/', function(req, res){
   client.connect();
-  client.query('INSERT INTO Test VALUES(1,'+'test_from GET'+');',(err, res) =>{
+  client.query('INSERT INTO Test VALUES(2,'+'test_from GET'+');',(err, res) =>{
     console.log("Yo");
   });
   res.send('Test Successfully');
